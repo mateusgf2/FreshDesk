@@ -9,7 +9,7 @@
         {% csrf_token %}
         <div class="grid grid-cols-1 gap-2 mt-4 sm:grid-cols-1">
             <div>
-                {{ form}}
+                {{ form| crispy }}
             </div>
             <div class="flex justify-end mt-6">
                 <button type="submit"

@@ -8,7 +8,7 @@
             <!-- Security token -->
             {% csrf_token %}
             <div>
-                {{ form}}
+                {{ form| crispy }}
             </div>
             
             <button type="submit"

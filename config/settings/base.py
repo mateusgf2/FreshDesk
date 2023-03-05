@@ -73,6 +73,7 @@ THIRD_PARTY_APPS = [
     'zxcvbn_password',
     'ckeditor',
     'ckeditor_uploader',
+    'crispy_bootstrap4',
 ]
 
 LOCAL_APPS = [
