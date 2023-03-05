@@ -20,7 +20,7 @@ admin.site.site_title = 'Freshdesk CRM Platform'
 admin.site.index_title = 'Freshdesk CRM Platform'
 admin.autodiscover()
 urlpatterns = [
-    # path('__debug__/', include('debug_toolbar.urls')),
+    path('__debug__/', include('debug_toolbar.urls')),
     path('', include('core.urls')),
     path('customers/', include('customers.urls')),
     path('profile/', include('profiles.urls')),

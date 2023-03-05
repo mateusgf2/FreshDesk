@@ -48,6 +48,7 @@ DJANGO_COMMON_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sessions',
+    "debug_toolbar",
 ]
 
 THIRD_PARTY_APPS = [
@@ -227,14 +228,14 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Cookie name. This can be whatever you want.
 # SESSION_COOKIE_NAME = 'DUMMY_SESSION'
 
-# Age of cookie, in seconds 52 weeks
-SESSION_COOKIE_AGE = 31449600
+# Idade do cookie, em segundos 52 semanas
+SESSION_COOKIE_AGE = 1800
 
-# Whether to save the session data on every request.
+# Se deseja salvar os dados da sessão em cada solicitação.
 SESSION_SAVE_EVERY_REQUEST = False
 
-# Whether a user's session cookie expires when the web browser is closed.
-SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+# Se o cookie de sessão de um usuário expira quando o navegador da web é fechado.
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 
 ##################
