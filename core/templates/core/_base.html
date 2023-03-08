@@ -353,7 +353,16 @@
         </div>
       </div>
     </div>
+  </div>
+  {% if messages %}
 
+  {% for message in messages %}
+  <div class="alert alert-info">
+      {{ message }}
+  </div>
+  {% endfor %}
+
+  {% endif %}
     <!-- Bootstrap core JavaScript-->
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
