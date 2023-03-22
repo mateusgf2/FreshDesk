@@ -12,6 +12,7 @@ import os
 
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
+
 from config.settings.base import *
 
 sentry_sdk.init(
@@ -29,7 +30,7 @@ sentry_sdk.init(
 )
 
 
-DEBUG = False
+DEBUG = True
 
 # Security Principles🛡
 # SECURE_SSL_REDIRECT = True
@@ -67,6 +68,7 @@ APPEND_SLASH = True
 LANGUAGES = [
     ('bn', gettext_noop('Bengali')),
     ('en', gettext_noop('English')),
+    ('pt-br', gettext_noop('Portugues')),
 ]
 
 # Languages using BiDi (right-to-left) layout
